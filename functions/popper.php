@@ -23,7 +23,7 @@ function wpab_functionality() {
 			#wpab_box {
 				display: none;
 				width: 100%;
-				background-color: #ff9800;
+				background-color: #2196f3;
 				color: white;
 				padding: 5px;
 				box-shadow: 0 2px 5px 5px rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
