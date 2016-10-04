@@ -5,8 +5,8 @@ function wpab_functionality() {
 	?>
 	<?php if ( is_single() ): ?>
 		<div id="wpab_box" class="row">
-			<p id="wpab_title" class="col l6 m6 s12"><?php echo $wpab_config['wpab_title']; ?></p>
-			<div class="col l6 m6 s12"><?php echo $wpab_config['wpab_formcode']; ?></div>
+			<p id="wpab_title" class="col l5 m5 s12"><?php echo $wpab_config['wpab_title']; ?></p>
+			<div class="col offset-l1 offset-m1 l6 m6 s12"><?php echo $wpab_config['wpab_formcode']; ?></div>
 			<a id="wpab_close">[X]</a>
 		</div>
 		<style>
