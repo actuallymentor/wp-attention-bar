@@ -4,10 +4,10 @@ function wpab_functionality() {
 	global $wpab_config;
 	?>
 	<?php if ( is_single() ): ?>
-		<div class="wpab_box">
-			<p id="wpab_title"><?php echo $wpab_config['wpab_title']; ?></p>
-			<?php echo $wpab_config['wpab_formcode']; ?>
-			<a id="wpab_close">[X] Close</a>
+		<div id="wpab_box" class="row">
+			<p id="wpab_title" class="col l6 m6 s12"><?php echo $wpab_config['wpab_title']; ?></p>
+			<div class="col l6 m6 s12"><?php echo $wpab_config['wpab_formcode']; ?></div>
+			<a id="wpab_close">[X]</a>
 		</div>
 		<style>
 			#wpab_close {
@@ -20,7 +20,8 @@ function wpab_functionality() {
 			#wpab_close:hover {
 				color: white!important;
 			}
-			.wpab_box {
+			#wpab_box {
+				display: none;
 				width: 100%;
 				background-color: #ff9800;
 				color: white;
@@ -30,11 +31,17 @@ function wpab_functionality() {
 				position: fixed;
 				bottom: 0;
 				left: 0;
+				margin: 0;
 			}
-			.wpab_box p, .wpab_box form {
-				float: left;
+			#wpab_box p, #wpab_box form {
 				margin: 0;
 				padding: 10px;
+			}
+			#wpab_box #wpab_title {
+				text-align: right;
+			}
+			#wpab_box form {
+				text-align: left;
 			}
 			<?php echo $wpab_config['wpab_custom_css']; ?>
 		</style>
